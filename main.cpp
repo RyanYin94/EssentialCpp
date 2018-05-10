@@ -46,21 +46,34 @@ int main() {
 // 写入对象  ofstream
 // 读取对象  ifstream
     ofstream outfile("seq_data.txt");      // 以输出模式打开seq_data.txt，
-    ofstream outfile2("seq_data.txt", ios_base::app);  // 以追加模式打开seq_data.txt，不清空原有内容
+//    ofstream outfile2("seq_data.txt", ios_base::app);  // 以追加模式打开seq_data.txt，不清空原有内容
 //相当于python中的 open("seq_data.txt", w) as outfile:
 //               open("seq_data.txt", a) as outfile2:
     if(!outfile){
         cerr << "Unable to open the file" << endl;
     }else{
-        outfile << "content" << endl;
+        outfile << "Bob" << ' '
+                << 10 << ' '
+                << 4 << endl;
+        outfile << "Ryan" << ' '
+                << 10 << ' '
+                << 9 << endl;
 //在outfile中写入一些内容
     }
 //    以读取模式打开文件  并将对象命名为readfile
     ifstream readfile("seq_data.txt");
     if(!readfile){
-        cerr << "Unable to open the file" << endl;
+        cerr << "Unable  to open the file" << endl;
     }else{
-        cout << 12 << endl;
+        string name;
+        int a;
+        int b;
+        while(readfile >> name){
+            readfile >> a >> b;
+            cout << name << endl;
+            cout << a << endl;
+            cout << b << endl;
+        }
     }
     return 0;
 }
