@@ -75,5 +75,69 @@ int main() {
             cout << b << endl;
         }
     }
+    /******************* exercise 1.5 ********************/
+//    string username;
+//    cout << "enter your name:";
+//    cin >> username;
+//    switch(username.size()){
+//        case 0:
+//            cout << "enter a name,please" << endl;
+//            break;
+//        case 1:
+//            cout << "too short" << endl;
+//            break;
+//        default:
+//            cout << "hello," << username << endl;
+//            break;
+//    }
+    /******************* exercise 1.6 ********************/
+//    vector<int> vec1_6;
+//    int num1_6;
+//    int sum1_6 = 0;
+//    while(cin >> num1_6){
+//        vec1_6.push_back(num1_6);
+//    }
+//    for(int i=0; i < vec1_6.size(); ++i){
+//        sum1_6 += vec1_6[i];
+//    }
+//    cout << "sum: " << sum1_6 << endl;
+//    cout << "average: " << sum1_6 / vec1_6.size() << endl;
+    /******************* exercise 1.7 ********************/
+//    ofstream file1_7write("file1_7.txt");
+//    if(file1_7write){
+//        file1_7write << "this is the exercise 1.7." << endl;
+//        file1_7write << "this is the line2." << endl;
+//        file1_7write << "this is the last line." << endl;
+//    }
+//    vector<string> vecstr1_7;
+//    string str1_7;
+//    ifstream file1_7read("file1_7.txt");
+//    if(file1_7read){
+//        while(file1_7read >> str1_7){
+//            vecstr1_7.push_back(str1_7);
+//        }
+//    }
+//    for(int i=0; i < vecstr1_7.size(); ++i){
+//        cout << vecstr1_7[i] << ' ';
+//    }
+//    cout << endl;
+//    sort(vecstr1_7.begin(), vecstr1_7.end());
+//    for(int i=0; i < vecstr1_7.size(); ++i){
+//        cout << vecstr1_7[i] << ' ';
+//    }
+    /******************* exercise 1.8 ********************/
+//    const char* msg2user(int num){
+//        static const char* msg[] = {
+//                "0 line",
+//                "1 line",
+//                "2 line"
+//        };
+//        return msg[num];
+//    }
+//    cout << msg2user(1) << endl;
+/***********************  第二章部分内容 *************************/
+/***********************  第二章部分内容 *************************/
+/***********************  第二章部分内容 *************************/
+
     return 0;
 }
