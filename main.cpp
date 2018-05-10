@@ -7,7 +7,7 @@
 using namespace std;
 
 int main() {
-    /*********************** 第一章部分内容 *************************/
+    /***********************  第一章部分内容 *************************/
     int num_arr[6] = {1, 2, 3, 4, 5, 6};
     vector<int> num_vec(num_arr, num_arr + 6);
     for(int i=0; i < num_vec.size(); ++i){
